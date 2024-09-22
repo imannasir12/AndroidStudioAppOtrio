@@ -1,0 +1,164 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+    <!--turn layout-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="casual"
+            android:text="ONE PLAYER"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/turn"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:onClick="hint"
+            android:padding="5dp"
+            android:src="@drawable/red" />
+        <!--Turn layout ends-->
+    </LinearLayout>
+    <!--Game board grid layout-->
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="3"
+        android:rowCount="3">
+
+        <ImageView
+            android:id="@+id/a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="2dp"
+            android:onClick="aClick"
+            android:src="@drawable/eee_0" />
+
+        <ImageView
+            android:id="@+id/b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="2dp"
+            android:onClick="bClick"
+            android:src="@drawable/eee_0" />
+
+        <ImageView
+            android:id="@+id/c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="2dp"
+            android:onClick="cClick"
+            android:src="@drawable/eee_0" />
+
+        <ImageView
+            android:id="@+id/d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="2dp"
+            android:onClick="dClick"
+            android:src="@drawable/eee_0" />
+
+        <ImageView
+            android:id="@+id/e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="2dp"
+            android:onClick="eClick"
+            android:src="@drawable/eee_0" />
+
+        <ImageView
+            android:id="@+id/f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="2dp"
+            android:onClick="fClick"
+            android:src="@drawable/eee_0" />
+
+        <ImageView
+            android:id="@+id/g"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="2dp"
+            android:onClick="gClick"
+            android:src="@drawable/eee_0" />
+
+        <ImageView
+            android:id="@+id/h"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="2dp"
+            android:onClick="hClick"
+            android:src="@drawable/eee_0" />
+
+        <ImageView
+            android:id="@+id/i"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="2dp"
+            android:onClick="iClick"
+            android:src="@drawable/eee_0" />
+        <!--Grid layout ends-->
+    </GridLayout>
+    <!--Layout for size buttons-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+        <!--Small Button-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:backgroundTint="@color/black"
+            android:fontFamily="casual"
+            android:onClick="small"
+            android:text="Small"
+            android:textStyle="bold" />
+        <!--Medium Button-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:backgroundTint="@color/black"
+            android:fontFamily="casual"
+            android:onClick="medium"
+            android:text="Medium"
+            android:textStyle="bold" />
+        <!--Big Button-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:backgroundTint="@color/black"
+            android:fontFamily="casual"
+            android:onClick="big"
+            android:text="Big"
+            android:textStyle="bold" />
+        <!--Size button layout ends-->
+    </LinearLayout>
+    <!--Linear layout ends-->
+</LinearLayout>

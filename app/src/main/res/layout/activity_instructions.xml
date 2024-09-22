@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <!--Scroll view for instructions-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--Linear layout for instruction images-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/instruct1" />
+
+            <ImageView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/instruct2" />
+
+            <ImageView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/instruct3" />
+            <!--Linear layout for game selection buttons-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+                <!--One player button-->
+                <Button
+                    android:id="@+id/onePlayer"
+                    android:layout_width="165dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="@color/black"
+                    android:fontFamily="casual"
+                    android:onClick="onePlayer"
+                    android:text="One Player" />
+                <!--Two player button-->
+                <Button
+                    android:id="@+id/twoPlayer"
+                    android:layout_width="165dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="@color/black"
+                    android:fontFamily="casual"
+                    android:onClick="twoPlayer"
+                    android:text="Two Player" />
+                <!--Layout for buttons ends-->
+            </LinearLayout>
+            <!--Layout for scroll view ends-->
+        </LinearLayout>
+        <!--Scroll view ends-->
+    </ScrollView>
+    <!--Linear layout ends-->
+</LinearLayout>

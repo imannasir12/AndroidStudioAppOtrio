@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="365dp"
+    android:layout_height="549dp"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/splash"
+    android:orientation="vertical">
+    <!--Instructions Button-->
+    <Button
+        android:id="@+id/instruct"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="360dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="casual"
+        android:onClick="toInstructions"
+        android:text="Instructions"
+        android:textStyle="bold" />
+    <!--Layout ends-->
+</LinearLayout>
